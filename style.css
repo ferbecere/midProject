@@ -1,0 +1,96 @@
+body{
+    background-color:#F4F6FC ;
+    font-family: roboto;
+    margin:0 20px;
+    color:#6B708D;
+}
+.alt-color{
+   color:#292E47
+}
+.header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 120px;
+}
+.header-center{
+    display:flex;
+    justify-content:space-evenly;
+    padding:0 60px;
+    flex-grow: 2;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 130%;
+}
+.active-link{
+    color: #072AC8;
+}
+
+.button-main{
+    background-color: #072AC8;
+    border: none;
+    color:white;
+    padding:15px 36px;
+}
+.slogan{
+    font-size:60px;
+}
+.hero-section{
+    display:flex;
+    flex-direction: column;
+}
+.hero-text{
+    font-size:20px;
+}
+.hero-buttons-section{
+    display: flex;
+    align-items: center;
+    justify-content: space-around; /*cambiar mas adelante, no pued poner paddings en los elemtnos internos porque los uso en mas sitios*/
+
+}
+.text-based-links{
+    font-size: 17px;
+}
+
+.hero-image{
+    height: 637px;
+width: 570px;
+top: 0px;
+border-radius: 0px;
+
+}
+.hero-card-1{
+    position: absolute; 
+width: 190px;
+height: 216px;
+left: 700px; /*revisar mas adelante*/
+top: 25px; /*revisar mas adelante*/
+}
+
+.hero-card-2{
+    position: absolute;
+width: 190px;
+height: 193px;
+left: 1080px; /*revisar mas adelante*/
+top: 457px; /*revisar mas adelante*/
+}
+#client-section{
+    margin:130px 170px;
+}
+.logos-section{
+    display:flex;
+    justify-content: space-evenly ;
+    align-items: center;
+    filter:grayscale(100%)
+    /*-webkit-filter:grayscale(100%);
+*/
+}
+.logos-section img{
+    margin:10px;
+}
+
+
+
+@media(min-width:360px){
+
+}
