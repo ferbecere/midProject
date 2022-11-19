@@ -9,6 +9,9 @@ body{
     margin:0 20px;
     color:#6B708D;
 }
+section{
+    padding:30px;
+}
 .header{
     display: flex;
     /*justify-content: space-around;*/
@@ -58,6 +61,9 @@ h3{
 .hero-text{
     font-size:20px;
 }
+.hero-text div{
+margin: 10px;
+}
 .hero-buttons-section{
     display: flex;
     align-items: center;
@@ -92,16 +98,16 @@ height: 193px;
 right: 0px; /*revisar mas adelante*/
 bottom: 0px; /*revisar mas adelante*/
 }
-#client-section{
-    margin:130px 170px 200px;
-}
+/* #client-section{
+    margin:20vw;
+} */
 .logos-section{
     display:flex;
     justify-content: space-evenly ;
     align-items: center;
-    filter:grayscale(100%)
-    /*-webkit-filter:grayscale(100%);
-*/
+    filter:grayscale(100%);
+    flex-wrap:wrap;
+   
 }
 .logos-section img{
     margin:10px;
@@ -109,12 +115,14 @@ bottom: 0px; /*revisar mas adelante*/
 .cards{
     display:flex;
     flex-direction: column;
+    
 }
 .cards div{
 height: 444px;
 width: 80vw;
 font-size:20px;
 box-shadow: 40px 5px 40px rgba(0, 0, 0, 0.05 );
+margin: 30px 0px;
 background-color: white; /*color temporal para ver en la maquetación*/
 /*de momento lo dejo asñi a la espera de saber que se tiene que hacer con el js*/
 }
@@ -123,6 +131,8 @@ background-color: white; /*color temporal para ver en la maquetación*/
     flex-direction: column;
     background-color: #FFC600;
     align-items: center;
+    justify-content: center;
+    text-align: center;
 }
 .cards-links{
     color: #072AC8;
@@ -135,7 +145,13 @@ background-color: white; /*color temporal para ver en la maquetación*/
     padding:10px;
 }
 
-
+.text-box{
+    border-style: none;
+    padding:15px 0;
+    background: url(./mail-us/mail-icon.png) no-repeat scroll 7px 7px; 
+    padding-left:40px;
+    background-color: #fff;
+}
 
 
 @media(min-width:361px){
