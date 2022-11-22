@@ -235,15 +235,6 @@ footer{
 }
 
 @media(min-width:361px){
-
-  
-    body{
-        background-color:#F4F6FC ;
-        font-family: roboto;
-        margin:0 20px;
-        color:#6B708D;
-    }
-    }
     .header{
         display: flex;
         justify-content: space-around;
@@ -257,20 +248,6 @@ footer{
         padding:0px;
         flex-grow: 2;      
     }
-    .active-link{
-        color: #072AC8;
-    }
-    h1,h2,h3{
-        color:#292E47;
-    }
-    
-    .button-main{
-        background-color: #072AC8;
-        border: none;
-        color:white;
-        padding:15px 36px;
-    }
-    
     h1{
         font-size:40px;
     }
@@ -282,7 +259,7 @@ footer{
     }
     .hero-section{
         display:flex;
-        flex-direction: column;
+        flex-direction: row;
     }
     .hero-text{
         font-size:20px;
@@ -298,93 +275,36 @@ footer{
     }
     .text-based-links{
         font-size: 17px;
-        text-decoration: none;
-        color:#6B708D
     }
     .hero-image-section{
         position:relative;
     }
     .hero-image{
-        height: 100%;
-    width: 100%;
+        height: 50%;
+    width: 50%;
     top: 0px;
     border-radius: 0px;
     
     }
-    .hero-card-1{
-        position: absolute; 
-    width: 190px;
-    height: 216px;
-    left: 0px; /*revisar mas adelante*/
-    top: 0px; /*revisar mas adelante*/
-    }
-    
-    .hero-card-2{
-        position: absolute;
-    width: 190px;
-    height: 193px;
-    right: 0px; /*revisar mas adelante*/
-    bottom: 0px; /*revisar mas adelante*/
-    }
-    .testimonial-h2{
-        color:white;
-    }
-    #testimonial-section{
-        background-color: #292E47;
-        position:relative;
-    }#testimonial-section p{
-        color:#FFC600;                          /*este entra en conflicto con .testimonial-name*/
-        background-color: #292E47;
-    }
-    .logos-section{
-        display:flex;
-        justify-content: space-evenly ;
-        align-items: center;
-        filter:grayscale(100%);
-        flex-wrap:wrap;
-       
-    }
-    .logos-section img{
-        margin:10px;
-    }
+      
     .cards{
         display:flex;
-        flex-direction: column;
+        flex-direction: row;
+       
     }
     .cards div{
-    height: 350px;
+    height: 350px; /*a considerar taambien width*/
     width: 80vw;
     font-size:20px;
-    box-shadow: 40px 5px 40px rgba(0, 0, 0, 0.05 );
-    margin: 30px 0px;
-    background-color: white; 
+    margin: 30px 10px;
+    padding: 10px 10px;
     /*de momento lo dejo asñi a la espera de saber que se tiene que hacer con el js*/
-    }
-    #mailing-section{
-        display:flex;
-        flex-direction: column;
-        background-color: #FFC600;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-    }
-    .cards-links{
-        color: #072AC8;
-        text-decoration:none;
-        font-size: 17px;
-    }
-    .card-icon{
-        background-color: #ECF7FF;
-        border-radius: 90px;
-        padding:10px;
     }
     
     .text-box{
         border-style: none;
         padding:15px 0;
         background: url(./mail-us/mail-icon.png) no-repeat scroll 7px 7px; 
-        padding-left:40px;
-        background-color: #fff;
     }
     .blue-mark-testimonial{
         background-image: url(./testimonial-section/orbit.png);
@@ -392,73 +312,19 @@ footer{
     }
     
     #personaje1, #personaje2, #personaje3, #personaje4{
-        height: 30px;
-        position: absolute;
-        margin:15px;
-    }
-    #personaje1{
-    top:0px;
-    left:0px;
-    }
-    #personaje2{
-    top:0px;
-    right:0px;
-    }
-    #personaje3{
-    bottom:0px;
-    left:0px;
-    }
-    #personaje4{
-    bottom:0px;
-    right:0px;
-    }
-    .testimonial{
-        display:flex;
-        align-items: center;
-        justify-content: center;
-        
-    }
-    .testimonial img{
-        height:50px;
-        width: 50px;
-        border-radius: 50%;
-     
-        margin-right:15px;
-    }
-    .testimonial-name{
-        color:#A2D6F9;
-        margin:0;
-        font-size: 15px;
-    }
-    .testimonial-site{
-        font-size:13px;
-        margin:0px;
-        color:#F4F6FC;
+        height: 75px;
     }
     .inner-cards{
         display:flex;
         flex-direction: column;
         align-items: baseline;
+        margin:5px
     
     }
     .inner-cards img{
         height:50px;
     }
-    footer{
-        display:flex;
-        margin:15px;
-    }
-    .footer-links{
-        display:flex;
-        flex-wrap:wrap;
-        justify-content: space-between;
-        align-content: center;
-        
-    }
-    .footer-links a{
-        margin: 20px;
     
-    }
+}
+
     
-    
-    }
