@@ -72,6 +72,8 @@ margin: 10px;
 }
 .text-based-links{
     font-size: 17px;
+    text-decoration: none;
+    color:#6B708D
 }
 .hero-image-section{
     position:relative;
@@ -98,9 +100,16 @@ height: 193px;
 right: 0px; /*revisar mas adelante*/
 bottom: 0px; /*revisar mas adelante*/
 }
-/* #client-section{
-    margin:20vw;
-} */
+.testimonial-h2{
+    color:white;
+}
+#testimonial-section{
+    background-color: #292E47;
+    position:relative;
+}#testimonial-section p{
+    color:#FFC600;                          /*este entra en conflicto con .testimonial-name*/
+    background-color: #292E47;
+}
 .logos-section{
     display:flex;
     justify-content: space-evenly ;
@@ -115,15 +124,14 @@ bottom: 0px; /*revisar mas adelante*/
 .cards{
     display:flex;
     flex-direction: column;
-    
 }
 .cards div{
-height: 444px;
+height: 350px;
 width: 80vw;
 font-size:20px;
 box-shadow: 40px 5px 40px rgba(0, 0, 0, 0.05 );
 margin: 30px 0px;
-background-color: white; /*color temporal para ver en la maquetación*/
+background-color: white; 
 /*de momento lo dejo asñi a la espera de saber que se tiene que hacer con el js*/
 }
 #mailing-section{
@@ -152,7 +160,70 @@ background-color: white; /*color temporal para ver en la maquetación*/
     padding-left:40px;
     background-color: #fff;
 }
+.blue-mark-testimonial{
+    background-image: url(./testimonial-section/orbit.png);
+    object-fit: cover;
+}
 
+#personaje1, #personaje2, #personaje3, #personaje4{
+    height: 30px;
+    position: absolute;
+    margin:15px;
+}
+#personaje1{
+top:0px;
+left:0px;
+}
+#personaje2{
+top:0px;
+right:0px;
+}
+#personaje3{
+bottom:0px;
+left:0px;
+}
+#personaje4{
+bottom:0px;
+right:0px;
+}
+.testimonial{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.testimonial img{
+    height:50px;
+    width: 50px;
+    border-radius: 50%;
+ 
+    margin-right:15px;
+}
+.testimonial-name{
+    color:#A2D6F9;
+    margin:0;
+    font-size: 15px;
+}
+.testimonial-site{
+    font-size:13px;
+    margin:0px;
+    color:#F4F6FC;
+}
+footer{
+    display:flex;
+    margin:15px;
+}
+.footer-links{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: space-between;
+    align-content: center;
+    
+}
+.footer-links a{
+    margin: 20px;
+
+}
 
 @media(min-width:361px){
 
