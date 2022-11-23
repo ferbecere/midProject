@@ -37,14 +37,18 @@ section{
 h1,h2,h3{
     color:#292E47;
 }
-
 .button-main{
     background-color: #072AC8;
     border: none;
     color:white;
     padding:15px 36px;
 }
-
+.button-contact{
+    background-color: #072AC8;
+    border: none;
+    color:white;
+    padding: 36px 200px;
+}
 h1{
     font-size:40px;
 }
@@ -86,14 +90,15 @@ border-radius: 0px;
 
 }
 .hero-card-1{
+    display:none;
     position: absolute; 
 width: 190px;
 height: 216px;
 left: 0px; /*revisar mas adelante*/
 top: 0px; /*revisar mas adelante*/
 }
-
 .hero-card-2{
+    display:none;
     position: absolute;
 width: 190px;
 height: 193px;
@@ -104,9 +109,13 @@ bottom: 0px; /*revisar mas adelante*/
     color:white;
 }
 #testimonial-section{
+    margin:100px 0;
+    height:300px;
     background-color: #292E47;
     position:relative;
-}#testimonial-section p{
+    display:flex;
+}
+.yellow-text{
     color:#FFC600;                          /*este entra en conflicto con .testimonial-name*/
     background-color: #292E47;
 }
@@ -152,7 +161,6 @@ background-color: white;
     border-radius: 90px;
     padding:10px;
 }
-
 .text-box{
     border-style: none;
     padding:15px 0;
@@ -160,11 +168,22 @@ background-color: white;
     padding-left:40px;
     background-color: #fff;
 }
+.text-box-contact{
+    border-style: none;
+    padding:15px 0;
+    padding-left:10px;
+    background-color: #E7E9F1;
+    font-size: 10px;
+}
+.contact-email-phone{
+    display: flex;
+    flex-direction: row;
+}
 .blue-mark-testimonial{
     background-image: url(./testimonial-section/orbit.png);
     object-fit: cover;
+    align-content:center;
 }
-
 #personaje1, #personaje2, #personaje3, #personaje4{
     height: 30px;
     position: absolute;
@@ -218,6 +237,23 @@ right:0px;
 .inner-cards img{
     height:50px;
 }
+#contact-us p{
+    margin:10px 0;
+}
+#contact-us input{
+    width: 250px;
+    margin-right:20px;
+}
+#contact-us button{
+    display: flex;
+    align-items: center;
+    margin-top:10px;
+}
+.contact-email-phone{
+    display:flex;
+    flex-direction: column;
+    justify-content:space-between ;
+}
 footer{
     display:flex;
     margin:15px;
@@ -234,7 +270,7 @@ footer{
 
 }
 
-@media(min-width:361px){
+@media(min-width:361px){  
     .header{
         display: flex;
         justify-content: space-around;
@@ -300,11 +336,21 @@ footer{
     padding: 10px 10px;
     /*de momento lo dejo asñi a la espera de saber que se tiene que hacer con el js*/
     }
+    .cards-unit{
+        display:flex;
+        flex-direction: column;
+        width:100px;
+    }
+    .card-image{
+        height:350px;
+        object-fit: cover;
+    }
     
     .text-box{
         border-style: none;
         padding:15px 0;
         background: url(./mail-us/mail-icon.png) no-repeat scroll 7px 7px; 
+        background-color: white;
     }
     .blue-mark-testimonial{
         background-image: url(./testimonial-section/orbit.png);
@@ -313,16 +359,24 @@ footer{
     
     #personaje1, #personaje2, #personaje3, #personaje4{
         height: 75px;
-    }
-    .inner-cards{
-        display:flex;
-        flex-direction: column;
-        align-items: baseline;
-        margin:5px
     
     }
-    .inner-cards img{
-        height:50px;
+    #contact-us p{
+        margin:10px 0;
+    }
+    #contact-us input{
+        width: 250px;
+        margin-right:20px;
+    }
+    #contact-us button{
+        display: flex;
+        align-items: center;
+        margin-top:10px;
+    }
+    .contact-email-phone{
+        display:flex;
+        flex-direction: row;
+        justify-content:space-between ;
     }
     
 }
