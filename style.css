@@ -97,6 +97,10 @@ height: 216px;
 left: 0px; /*revisar mas adelante*/
 top: 0px; /*revisar mas adelante*/
 }
+a{
+    color:white;
+    text-decoration: none;
+}
 .hero-card-2{
     display:none;
     position: absolute;
