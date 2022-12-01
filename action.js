@@ -31,8 +31,6 @@ function createCard(imageSrc, title, description) {
   return cardUnit;
 }
 
-ADIOSITO :kiss:
-
 fetch("https://api.punkapi.com/v2/beers")
   .then(response => {
     return response.json()
